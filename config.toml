@@ -1,5 +1,5 @@
 [node]
-  node_name = "fullnode"
+  node_name = "YOUR_NODE_NAME"
   # Fast sync allows a block to catch up quickly to the chain by downloading blocks in parallel and verifying their commits
   fast_sync = true
   # Specify what backend database to use (goleveldb|cleveldb)
@@ -27,14 +27,14 @@
     Cycles = 100
 
 [network]
-  rpc_address = "tcp://127.0.0.1:38604"
+  rpc_address = "tcp://127.0.0.1:26600"
   # RPC startup timeout in seconds
   rpc_start_timeout = 2
   # Main address for P2P connections
-  p2p_address = "tcp://127.0.0.1:38605"
+  p2p_address = "tcp://127.0.0.1:26601"
   # Address to advertise for incoming peers to connect to
   external_p2p_address = ""
-  sdk_address = "http://127.0.0.1:38606"
+  sdk_address = "http://127.0.0.1:26602"
 
 [p2p]
   # List of seed nodes to connect to
