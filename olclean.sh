@@ -1,7 +1,5 @@
 #!/bin/bash
-cd nodedata
-rm -r *
-cd consensus/config
-rm -r addrbook.json
-cd consensus/data
-rm -r *
+rm -r $OLDATA/nodedata/*
+rm -r $OLDATA/consensus/data/*
+rm $OLDATA/genesis.json
+rm $OLDATA/*.log
