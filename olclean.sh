@@ -1,6 +1,15 @@
 #!/bin/bash
 rm -r $OLDATA/nodedata/*
 rm -r $OLDATA/consensus/data/*
-rm $OLDATA/consensus/config/genesis.json
 rm $OLDATA/*.log
-rm $OLDATA/genesis.json
+if [ -e $OLDATA/genesis.json ]
+then
+	rm $OLDATA/genesis.json
+  echo -e "genesis in OLDATA is removed"
+fi
+
+if [ -e $OLDATA/consensus/config/genesis.json ]
+then
+	rm $OLDATA/consensus/config/genesis.json
+  echo -e "genesis in OLDATA/consensus/config is removed"
+fi
