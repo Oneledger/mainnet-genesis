@@ -1,6 +1,6 @@
 {
 "genesis_time":"2020-12-08T15:27:53.829628065Z",
-"chain_id":"kratos-02",
+"chain_id":"kratos-03",
 "consensus_params":{
  "block": {
   "max_bytes": "22020096",
@@ -3301,7 +3301,7 @@
   ],
   "intervals": [
    {
-    "lastIndex": 4,
+    "lastIndex": 3,
     "lastHeight": 2
    }
   ],
