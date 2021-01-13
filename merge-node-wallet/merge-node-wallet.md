@@ -9,7 +9,7 @@ This documentation explains how to merge node wallet from an old node to current
 
 2. Locate old node's wallet
 
-   Make sure both nodes are killed, and go to the old node's folder, here we will refer it as `PATH_OF_OLD_NODE`, and the structure of such folder will looks like below:
+   Make sure both nodes are killed, and go to the old node's folder, here we will refer it as `PATH_OF_OLD_NODE`, and the structure of such folder will look like below:
     ```
     config.toml  consensus  consensus.log  keystore  nodedata
     ```
