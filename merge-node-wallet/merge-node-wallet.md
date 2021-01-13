@@ -8,6 +8,7 @@ This documentation explains how to merge node wallet from an old node to current
     - If you are using docker, stop containers and follow [this](https://github.com/Oneledger/protocol/wiki/Backup-your-keys-v0.16.3(Docker-version))
 
 2. Locate old node's wallet
+
    Make sure both nodes are killed, and go to the old node's folder, here we will refer it as `PATH_OF_OLD_NODE`, and the structure of such folder will looks like below:
     ```
     config.toml  consensus  consensus.log  keystore  nodedata
