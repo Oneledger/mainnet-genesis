@@ -59,3 +59,7 @@ This documentation explains how to merge node wallet from an old node to current
 
     Address: 0lt179fd5afe29659431c2b30ee6567bca2244297e2    Balance: 111111111.111111111111111111 OLT
    ```
+   After this you can safely remove `olmerge`:
+   ```
+   rm olmerge
+   ```
