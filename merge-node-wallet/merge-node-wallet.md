@@ -27,7 +27,7 @@ This documentation explains how to merge node wallet from an old node to current
 4. Merge node wallets
    ```
    cd PATH_OF_NEW_NODE
-   ./olmerge --old PATH_OF_OLD_NODE/nodedata
+   ./olmerge merge --old PATH_OF_OLD_NODE/nodedata
    ```
    The result will look similar as below:
    ```
