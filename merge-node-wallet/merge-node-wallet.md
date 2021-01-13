@@ -16,6 +16,7 @@ This documentation explains how to merge node wallet from an old node to current
     The `accounts.db` located in `nodedata` folder is the one we want to merge from.
 
 3. Get merge tool
+
    Here we will go to the node folder for new/current node, it will be referred as `PATH_OF_NEW_NODE`. Add `sudo` before commands if there is any permission issue.
    ```
    cd PATH_OF_NEW_NODE
@@ -46,6 +47,7 @@ This documentation explains how to merge node wallet from an old node to current
    ```
 
 5. Check results after merging
+
    Start the new node, and list all the accounts:
    ```
    olclient list
