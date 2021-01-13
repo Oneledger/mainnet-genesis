@@ -1,6 +1,6 @@
 # Instructions to merge node wallet
 This documentation explains how to merge node wallet from an old node to current node.
-> The procedure requires the specific merge tool `olmerge` provided to you
+> The procedure requires the specific merge tool `olmerge` provided to you in this documentation
 
 ## Before merging
 1. Stop both old and current node and backup credentials
