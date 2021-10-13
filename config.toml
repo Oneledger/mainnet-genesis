@@ -6,6 +6,8 @@
   db = "cleveldb"
   # Specify the application database directory. This is always relative to the root directory of the app.
   db_dir = "nodedata"
+  # Toggle async mode (default: false)
+  use_async = false
   # Specify the log level for olfullnode. 0: Fatal, 1: Error, 2: Warning, 3: Info, 4: Debug, 5: Detail
   loglevel = 4
   # List of transaction tags to index in the database, allows them to be searched by the specified tags
@@ -35,6 +37,34 @@
   # Address to advertise for incoming peers to connect to
   external_p2p_address = ""
   sdk_address = "http://127.0.0.1:26602"
+
+[api]
+  [api.http]
+    # Enable the HTTP-RPC server
+    enabled = false
+    # HTTP-RPC server listening interface (default: "localhost")
+    addr = "localhost"
+    # HTTP-RPC server listening port (default: 8545)
+    port = 8545
+    # API's keep alive. Note: only very resource-constrained environments or servers in the process of shutting down should disable them (default: true)
+    keepalive = true
+    # API's offered over the HTTP-RPC interface
+    api = ["eth", "web3", "net"]
+    # Comma separated list of domains from which to accept cross origin requests (browser enforced)
+    corsdomain = []
+    # Comma separated list of virtual hostnames from which to accept requests (server enforced). Accepts '*' wildcard. (default: "localhost")
+    vhosts = ["localhost"]
+  [api.ws]
+    # Enable the WS-RPC server
+    enabled = false
+    # WS-RPC server listening interface (default: "localhost")
+    addr = "localhost"
+    # WS-RPC server listening port (default: 8546)
+    port = 8546
+    # API's offered over the WS-RPC interface
+    api = ["eth", "web3", "net"]
+    # Origins from which to accept websockets requests
+    origins = []
 
 [p2p]
   # List of seed nodes to connect to
