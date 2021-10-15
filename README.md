@@ -1,1 +1,1 @@
-# kratos-genesis
+# mainnet-genesis
