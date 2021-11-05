@@ -30,4 +30,4 @@ then
     exit
 fi
 
-(crontab -l 2>/dev/null; echo "0 0 */5 * * $OLDATA/clean_log_files.sh") | crontab -
+(crontab -l 2>/dev/null; echo "0 0 */3 * * $OLDATA/clean_log_files.sh") | crontab -
