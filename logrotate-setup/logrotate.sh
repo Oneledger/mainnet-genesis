@@ -22,3 +22,12 @@ EOM
 
 #Run logrotate script
 sudo logrotate $FILE -f
+
+#setup cronjob
+if [ "$(whoami)" != "root" ]
+then
+    sudo su -s "$0"
+    exit
+fi
+
+(crontab -l 2>/dev/null; echo "0 0 */3 * * $OLDATA/clean_log_files.sh") | crontab -
